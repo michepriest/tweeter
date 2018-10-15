@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
+    <title>dinochat - Home Page</title>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
@@ -56,18 +56,16 @@
     <main class="container">
       <section class="new-tweet">
         <div id="error-empty">
-          <img src="/tweeter-footer-dinosaur-avatars-situations/svg/038-think.svg">
-          <p class="error-empty">Don't ya want to say something?</p>
+          <h3 class="error-empty"><img class="error-empty" src="/images/tweeter-footer-dinosaur-avatars-situations/svg/038-think.svg">Don't ya want to say something?</h3>
         </div>
         <div id="error-over-count">
-          <img src="/tweeter-footer-dinosaur-avatars-situations/svg/036-sick.svg">
-          <p class="error-over-count">too many characters!</p>
+          <h3 class="error-over-count"><img class="error-over-count" src="/images/tweeter-footer-dinosaur-avatars-situations/svg/036-sick.svg">too many characters!</h3>
         </div>
         <h2 class="compose-box">chat here</h2>
         <form method="POST" action="/tweets" id="tweetform">
           <textarea class="text-area" name="text" placeholder="What's crackin'?"></textarea>
           <div class="tweet-button">
-            <input id="tweet-button" type="submit" value="Tweet">
+            <input id="tweet-button" type="submit" value="post">
             <span class="counter">140</span>
           </div>
         </form>

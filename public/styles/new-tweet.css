@@ -34,12 +34,20 @@ main.container {
   max-width: 91%;
 }
 
+#tweet-button {
+  border: black;
+  border-width: medium;
+  border-style: solid;
+  border-radius: .3rem;
+}
+
 .tweet-button {
   display: flex;
   justify-content: space-between;
   margin: 1rem;
   margin-top: 0;
   margin-bottom: .5rem;
+  font-family: 'Londrina Solid';
 }
 
 .counter-negative {
@@ -51,6 +59,30 @@ main.container {
   word-break: break-word;
 }
 
+.error-empty-phrase {
+  text-align: center;
+}
+
+.error-empty {
+  height: 80px;
+  text-align: center;
+  display: none;
+}
+
+.error-over-count-phrase {
+  text-align: center;
+}
+
+.error-over-count {
+  height: 80px;
+  text-align: center;
+  display: none;
+}
+
+/* .error-empty-phrase {
+
+  display: none;
+} */
 
 
 

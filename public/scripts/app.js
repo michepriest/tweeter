@@ -44,12 +44,25 @@ $(()=> {
   // AJAX request to submit tweets asynchonously
   $("#tweetform").on("submit", function(event) {
     event.preventDefault();
-    let data = $("#tweetform").serialize(); // convert object to string
-    let empty = $(".text-area").val() === "";
+    let data = $("#tweetform").serialize(); // converts object to string
+    let currentValue = $(".text-area").val();
+    let overCharacterCount = currentValue.length;
+    console.log("OVER_CHAR_COUNT", overCharacterCount)
+    //console.log("CURRENTVALUE", currentValue)
+
+    let empty = currentValue === "";
     if (empty) {
-      $("#error-empty, .error-empty").slideDown(400, function() {
-        $(".error-empty").text("Don't ya want to say something?");
-      })} else {
+      $("#error-empty, .error-empty").slideDown(400);
+    } else if (overCharacterCount > 140) {
+      $("#error-over-count, .error-over-count").slideDown(400);
+      // if (overCharacterCount) {
+      //   $("#error, error-over-count").slideDown(400, function() {
+      //     $("error-over-count").text("Too many characters!");
+      //     console.log("OVERCHARCOUNT", overCharacterCount)
+      //   })
+      // }
+
+    } else {
       $.ajax({
         url: "/tweets",
         method: "POST",
