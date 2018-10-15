@@ -47,15 +47,15 @@ $(()=> {
     let data = $("#tweetform").serialize(); // convert object to string
     let empty = $(".text-area").val() === "";
     if (empty) {
-      $("#error, #errormessage").slideDown(400, function() {
-        $("#errormessage").text("Don't ya want to say something?");
+      $("#error-empty, .error-empty").slideDown(400, function() {
+        $(".error-empty").text("Don't ya want to say something?");
       })} else {
       $.ajax({
         url: "/tweets",
         method: "POST",
         data: data,
         success: function (result) {
-          $('#error').slideUp(500);
+          $('#error-empty').slideUp(500);
           loadTweets();
           $(".text-area").val("")
         }

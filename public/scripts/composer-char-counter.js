@@ -10,11 +10,11 @@ $(document).ready(function() {
       $("#tweet-button").attr("disabled", true);
     } else {
       $(".counter").removeClass("counter-negative");
-      $("#error, #errormessage").slideUp()
+      $("#error-empty, .error-empty").slideUp()
       $("#tweet-button").attr("disabled", false);
     }
     if (overCharacterCount) {
-      $("#error, #errormessage").slideDown(400, function() {
+      $("#error, .errormessage").slideDown(400, function() {
         $("#errormessage").text("too many characters!");
       })
     }

@@ -55,8 +55,13 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <div id="error">
-          <p class="error-message" id="errormessage"></p>
+        <div id="error-empty">
+          <img src="/tweeter-footer-dinosaur-avatars-situations/svg/038-think.svg">
+          <p class="error-empty">Don't ya want to say something?</p>
+        </div>
+        <div id="error-over-count">
+          <img src="/tweeter-footer-dinosaur-avatars-situations/svg/036-sick.svg">
+          <p class="error-over-count">too many characters!</p>
         </div>
         <h2 class="compose-box">chat here</h2>
         <form method="POST" action="/tweets" id="tweetform">
