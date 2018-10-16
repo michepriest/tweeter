@@ -13,21 +13,21 @@ $(()=> {
   };
   
   function createTweetElement(tweetData) {
-    let $profileImg = $("<img>").attr("src", tweetData.user.avatars.regular).addClass("avatar")
-    let $fullName = $(`<h3 class="full-name">`).text(tweetData.user.name)
-    let $handle = $(`<span class="handle">`).text(tweetData.user.handle)
-    let $header = $(`<header class="tweet-header">`).append($profileImg, $fullName, $handle)
+    const $profileImg = $("<img>").attr("src", tweetData.user.avatars.regular).addClass("avatar")
+    const $fullName = $(`<h3 class="full-name">`).text(tweetData.user.name)
+    const $handle = $(`<span class="handle">`).text(tweetData.user.handle)
+    const $header = $(`<header class="tweet-header">`).append($profileImg, $fullName, $handle)
   
-    let $tweetContent = $(`<p class="tweet-content">`).text(tweetData.content.text)
-    let $section = $(`<section class="middle">`).append($tweetContent)
+    const $tweetContent = $(`<p class="tweet-content">`).text(tweetData.content.text)
+    const $section = $(`<section class="middle">`).append($tweetContent)
   
-    let $dateStamp = $(`<span class="date-stamp">`).text(moment(tweetData.created_at).startOf("hour").fromNow())
-    let $footerIconShare = $(`<img class="footer-icons">`).attr("src", "/images/footer-icons/share.svg")
-    let $footerIconStar = $(`<img class="footer-icons">`).attr("src", "/images/footer-icons/flag-star.svg")
-    let $footerIconHeart = $(`<img class="footer-icons">`).attr("src", "/images/footer-icons/heart.svg")
-    let $footer = $(`<footer class="tweet-footer">`).append($dateStamp, $footerIconShare, $footerIconStar, $footerIconHeart)
+    const $dateStamp = $(`<span class="date-stamp">`).text(moment(tweetData.created_at).startOf("hour").fromNow())
+    const $footerIconShare = $(`<img class="footer-icons">`).attr("src", "/images/footer-icons/share.svg")
+    const $footerIconStar = $(`<img class="footer-icons">`).attr("src", "/images/footer-icons/flag-star.svg")
+    const $footerIconHeart = $(`<img class="footer-icons">`).attr("src", "/images/footer-icons/heart.svg")
+    const $footer = $(`<footer class="tweet-footer">`).append($dateStamp, $footerIconShare, $footerIconStar, $footerIconHeart)
   
-    let $tweet = $(`<article class="tweet-container">`)
+    const $tweet = $(`<article class="tweet-container">`)
     .append($header)
     .append($section)
     .append($footer)
@@ -44,9 +44,9 @@ $(()=> {
   // AJAX request to submit tweets asynchonously
   $("#tweetform").on("submit", function(event) {
     event.preventDefault()
-    let data = $("#tweetform").serialize() // converts object to string
-    let currentValue = $(".text-area").val() // current number of characters entered in textarea
-    let overCharacterCount = currentValue.length;
+    const data = $("#tweetform").serialize() // converts object to string
+    const currentValue = $(".text-area").val() // current number of characters entered in textarea
+    const overCharacterCount = currentValue.length;
 
     const empty = currentValue === "";
     if (empty) {

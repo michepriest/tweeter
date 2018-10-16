@@ -28,7 +28,7 @@ module.exports = {
     }
 
     // code to use custom avatars from Ben Guidolin https://github.com/bguids91
-    let textArray = [817764, 81779, 817753, 817754, 817757, 817763, 817768, 817747, 817769, 817792, 817774, 817787, 817750, 817781, 817765, 817766, 817789, 817751, 817771]
+    let textArray = [817764, 817779, 817753, 817754, 817757, 817763, 817768, 817747, 817769, 817792, 817774, 817787, 817750, 817781, 817765, 817766, 817789, 817751, 817771]
 
     var randomIndex = Math.floor(Math.random() * textArray.length);
     var randomElement = textArray[randomIndex];
