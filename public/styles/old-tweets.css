@@ -17,6 +17,8 @@
   border-color: rgb(51, 50, 50);
 }
 
+/************* HEADER COMPONENTS *************/
+
 .tweet-container .tweet-header {
   display: flex;
   flex-direction: row;
@@ -30,9 +32,9 @@
 }
 
 .tweet-container .avatar {
-  width: 80px;
-  height: 80px;
-  padding: 12px;
+  width: 5.5rem;
+  height: 5rem;
+  padding: .8rem;
   border-radius: 1rem;
   opacity: .7;
 }
@@ -61,6 +63,8 @@
   opacity: 1;
 }
 
+/************* MIDDLE *************/
+
 .tweet-container .middle {
   margin: .5rem 1rem;
   margin-bottom: 0;
@@ -68,12 +72,13 @@
   max-width: 91%;
   min-height: 5rem;
   color: #627E84;
- 
 }
 
 .tweet-container:hoover .middle {
   opacity: 1;
 }
+
+/************* FOOTER COMPONENTS *************/
 
 .tweet-container .tweet-footer {
   padding: .75rem;
@@ -89,7 +94,7 @@
 
 .footer-icons {
   float: right;
-  width: 20px;
+  width: 1.2rem;
   margin: 0 .2rem;
   opacity: 0;
 }
@@ -101,6 +106,8 @@
 .tweet-container .date-stamp {
   color: #244751;
 }
+
+/************* ERROR MESSAGES COMPONENTS *************/
 
 #error {
   display: none;

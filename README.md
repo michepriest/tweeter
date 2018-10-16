@@ -1,6 +1,6 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a simple, single-page Twitter clone. I had some fun with the theme and created 'dinochat'.
 
 This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
 
@@ -13,8 +13,19 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Dependencies
 
-- Express
+- Express 4.13.4 or above
 - Node 5.10.x or above
+- Body-parser 1.15.2 or above
+- Chance 1.0.2 or above
+- MD5 2.1.0 or above
+- MongoDB 2.2.36 or above
 
+## Contributors
+[Hafiz Suara](https://github.com/hafbau) helped with implementing moment.js 
+Inspired by [Ben Guidolin](https://github.com/bguids91) to customize avatars
 
-Got help with moment.js from https://github.com/hafbau
+## Screenshots
+![Hover over a post to make it opaque]()
+![Empty string error]()
+![Too many characters error]()
+![Compose box retracts when chat button is clicked]()
