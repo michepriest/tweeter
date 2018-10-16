@@ -24,8 +24,8 @@ This repository is the starter code for the project: Students will fork and clon
 [Hafiz Suara](https://github.com/hafbau) helped with implementing moment.js 
 Inspired by [Ben Guidolin](https://github.com/bguids91) to customize avatars
 
-## Screenshots
-![Hover over a post to make it opaque]()
-![Empty string error]()
-![Too many characters error]()
-![Compose box retracts when chat button is clicked]()
+## Final Product
+![Hover over a post to make it opaque](https://github.com/michepriest/tweeter/blob/master/docs/Tweeter-opaque-hover-state.png)
+![Empty string error](https://github.com/michepriest/tweeter/blob/master/docs/Tweeter-empty-string-error.png)
+![Too many characters error](https://github.com/michepriest/tweeter/blob/master/docs/Tweeter-too-many-characters.png)
+![Compose box retracts when chat button is clicked](https://github.com/michepriest/tweeter/blob/master/docs/Tweeter-composebox-retracts-with-chat.png)
